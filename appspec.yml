@@ -5,10 +5,10 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: /before_install.sh
+    - location: /var/www/html/before_install.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: /restart_server.sh
+    - location: /var/www/html/restart_server.sh
       timeout: 300
       runas: root
