@@ -1,2 +1,2 @@
 #!/bin/sh
-service httpd restart
+sudo service apache2 restart
