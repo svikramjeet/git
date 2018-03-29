@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>AWS</title>
+	<title>AWS</title>
 	</head>
 	<body class="landing">
 			<section id="banner">
