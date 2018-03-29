@@ -1,5 +1,6 @@
 #!/bin/sh
-sudo apt-get install yum
+sudo apt-get -y install yum
+sudo yum install -y httpd
 yum update
 yum install -y httpd
-service httpd start
+sudo service httpd start
