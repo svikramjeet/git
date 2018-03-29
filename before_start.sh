@@ -1,4 +1,4 @@
 #!/bin/bash
-echo pwd
+cd /var/www/html/
 sudo composer install
 vendor/bin/phing www
