@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.php
+  - source: /
     destination: /var/www/html/
 permissions:
   - object: /var/www/
