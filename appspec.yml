@@ -12,7 +12,7 @@ hooks:
   BeforeInstall:
     - location: before_start.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
   AfterInstall:
     - location: after_start.sh
       timeout: 300
