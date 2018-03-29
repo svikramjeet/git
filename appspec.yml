@@ -10,10 +10,10 @@ permissions:
     mode: 777    
 hooks:
   BeforeInstall:
-    - location: before_install.sh
+    - location: before_start.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: restart_server.sh
+    - location: after_start.sh
       timeout: 300
       runas: root
