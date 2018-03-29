@@ -3,12 +3,17 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html/
+permissions:
+  - object: /var/www/
+    owner: root
+    group: root
+    mode: 777    
 hooks:
   BeforeInstall:
-    - location: ./var/www/html/before_install.sh
+    - location: before_install.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: /var/www/html/restart_server.sh
+    - location: restart_server.sh
       timeout: 300
       runas: root
