@@ -5,6 +5,5 @@ phases:
     commands:
       - curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer && chmod +x /usr/local/bin/composer
       - composer self-update
-      - composer install --prefer-source --no-interaction --dev 
-      - composer validate --no-check-all --strict
+      - composer install --prefer-source --no-interaction --dev --no-scripts
       - php artisan key:generate
