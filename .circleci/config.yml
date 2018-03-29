@@ -1,0 +1,45 @@
+version: 2
+notify:
+  webhooks:
+    # A list of hashes representing hooks. Only the url field is supported.
+    - url: https://production-review-tool.herokuapp.com/api/buildNotification
+jobs:
+  build:
+    working_directory: ~/elsie-web
+    docker:
+      - image: ucreateit/laravel-pgsql:0.0.1
+        environment:
+        APP_ENV: testing
+        APP_KEY: base64:ueiLZl0VWJYaxqHj8McYrWoyfdkLByCZe7Y4dQwU+wg=
+        APP_DEBUG: true
+        APP_LOG_LEVEL: debug
+        DB_CONNECTION: pgsql
+        DB_HOST: localhost
+        DB_PORT: 5432
+        DB_DATABASE: postgres
+        DB_USERNAME: ubuntu
+        DB_PASSWORD: postgres
+        DATABASE_URL: postgres://ubuntu@localhost:5432/postgres
+        REDIS_URL: redis://redis:p5890db5d499beb8944b09fa0@localhost:13009
+        BROADCAST_DRIVER: log
+        CACHE_DRIVER: file
+        SESSION_DRIVER: file
+        QUEUE_DRIVER: sync
+        REDIS_HOST: 127.0.0.1
+        REDIS_PASSWORD: null
+        ROLLBAR_ACCESS_TOKEN: sdfasd
+        ROLLBAR_LEVEL: debug
+        STRIPE_SECRET: jashg
+      - image: postgres:9.6.2
+    steps:
+      - checkout
+      - run: bash .circleci/setup-heroku.sh
+      - add_ssh_keys:
+          fingerprints:
+            - "b1:c9:ad:27:ba:c7:96:a6:c8:02:90:e7:d3:75:04:6f"
+      - deploy:
+          name: Deploy Master to Heroku
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                git push heroku master
+            fi
