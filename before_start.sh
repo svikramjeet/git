@@ -1,5 +1,4 @@
 #!/bin/bash
 echo pwd
-cd /opt/composer
-composer install
+sudo composer install
 vendor/bin/phing www
