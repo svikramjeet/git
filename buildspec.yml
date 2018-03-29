@@ -4,4 +4,7 @@ phases:
   pre_build:
     commands:
       - curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer && chmod +x /usr/local/bin/composer
-      - composer install
+      - composer self-update
+      - composer install --prefer-source --no-interaction --dev 
+      - composer validate --no-check-all --strict
+      - php artisan key:generate
