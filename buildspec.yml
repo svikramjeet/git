@@ -46,7 +46,7 @@ phases:
      - echo Build started on `date`
      - echo Installing composer deps
      - cd /var/www/html
-     - composer install --no-progress --no-suggest
+     - composer install --no-progress --no-suggest --no-scripts
 
  post_build:
    commands:
