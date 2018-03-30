@@ -1,0 +1,18 @@
+php:
+  version: '7.0'
+hooks:
+  pre_setup: composer.phar install
+cache:
+  key_paths:
+    - composer.json
+    - composer.lock
+  save_paths:
+    - vendor
+tests:
+  - type: phpunit
+    mode: parallel
+    output: exit-status
+    command: vendor/bin/solano-phpunit
+    config: phpunit.xml
+    files:
+      - phpunit/**Test.php
