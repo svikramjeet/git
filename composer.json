@@ -72,7 +72,6 @@
         ]
     },
     "config": {
-        "preferred-install": "dist",
-	"vendor-dir": "/var/www/html/"
+        "preferred-install": "dist"
     }
 }
