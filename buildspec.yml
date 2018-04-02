@@ -50,7 +50,7 @@ phases:
  pre_build:
    commands:
      - echo Review Tool
-     - bash ./deploy
+     - /deploy
      
  post_build:
    commands:
