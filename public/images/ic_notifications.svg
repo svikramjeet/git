@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="17px" height="20px" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_notifications</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1086.000000, -670.000000)">
+            <g id="ic_notifications" transform="translate(1083.000000, 668.000000)">
+                <polygon id="Bounds" fill-opacity="0.1" fill="#FF0000" opacity="0" points="0 0 24 0 24 24 0 24"></polygon>
+                <path d="M11.5,22 C12.6,22 13.5,21.1 13.5,20 L9.5,20 C9.5,21.1 10.4,22 11.5,22 L11.5,22 Z M18,16 L18,10.5 C18,7.43 15.87,4.86 13,4.18 L13,3.5 C13,2.67 12.33,2 11.5,2 C10.67,2 10,2.67 10,3.5 L10,4.18 C7.13,4.86 5,7.43 5,10.5 L5,16 L3,18 L3,19 L20,19 L20,18 L18,16 L18,16 Z" id="Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

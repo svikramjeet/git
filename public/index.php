@@ -1,13 +1,31 @@
 <?php
+ob_start("ob_gzhandler");
 
+ini_set("session.cookie_httponly", 1);
+ini_set("session.cookie_secure", 1);
+
+if(is_numeric(strpos($_SERVER['HTTP_HOST'], 'www.'))){	
+	$_SERVER['HTTP_HOST'] = strtolower($_SERVER['HTTP_HOST']);
+	$_SERVER['HTTP_HOST'] = str_replace("www.", "", $_SERVER['HTTP_HOST']);
+	$redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+	header('HTTP/1.1 301 Moved Permanently');
+	header('Location: ' . $redirect);
+	exit();
+}
+
+
+if(isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'http'){ 
+   $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+   header('HTTP/1.1 301 Moved Permanently');
+   header('Location: ' . $redirect);
+   exit();
+}
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
  */
-
-define('LARAVEL_START', microtime(true));
 
 /*
 |--------------------------------------------------------------------------
@@ -17,11 +35,11 @@ define('LARAVEL_START', microtime(true));
 | Composer provides a convenient, automatically generated class loader for
 | our application. We just need to utilize it! We'll simply require it
 | into the script here so that we don't have to worry about manual
-| loading any of our classes later on. It feels great to relax.
+| loading any of our classes later on. It feels nice to relax.
 |
 */
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__.'/../bootstrap/autoload.php';
 
 /*
 |--------------------------------------------------------------------------

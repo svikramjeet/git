@@ -1,0 +1,47 @@
+.suggest{
+    top:7px;
+    z-index:30;
+    text-align:left;
+    left: -10px;
+}
+.suggest>.dropdown-menu{
+    margin-top:15px;
+    position:absolute;
+    padding:0;
+    width: 200px;
+}
+.suggest>.dropdown-menu>li{
+    border-bottom:1px solid #eee;
+    width: 100%;
+    float: left;
+}
+.suggest>.dropdown-menu>li>a{
+    padding: 8px 16px;
+    cursor:default;
+    width: 100%;
+    float: left;
+}
+
+.suggest>.dropdown-menu>li.active>a {
+	background-color: rgba(13,71,161,0.08);
+}
+.suggest>.dropdown-menu>li:last-child{
+    border-bottom:0
+}
+.suggest>.dropdown-menu>li strong {
+    width: 100%;
+    float: left;
+    color: #424242;
+    font-size: 13px;    
+    font-weight: 600;   
+    line-height: 13px;
+    margin: 0px 0px 4px 0px;
+}
+.suggest>.dropdown-menu>li small {
+    width: 100%;
+    float: left;
+    color: #757575;
+    font-size: 11px;    
+    font-weight: 600;   
+    line-height: 11px;
+}

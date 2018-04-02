@@ -34,5 +34,15 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    'rollbar' => [
+        'access_token' => env('ROLLBAR_ACCESS_TOKEN'),
+        'level' => 'debug',
+    ],
+    'linkedin' => [
+        'client_id' => env('LINKEDIN_CLIENT_ID'),
+        'client_secret' => env('LINKEDIN_CLIENT_SECRET'),
+        'redirect' => env('APP_URL').'/auth/linkedin/callback',
+    ],
+   
 
 ];

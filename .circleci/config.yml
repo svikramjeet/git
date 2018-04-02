@@ -5,34 +5,32 @@ notify:
     - url: https://production-review-tool.herokuapp.com/api/buildNotification
 jobs:
   build:
-    working_directory: ~/elsie-web
+    working_directory: ~/clientshare-web
     docker:
       - image: ucreateit/laravel-pgsql:0.0.1
-        environment:
-        APP_ENV: testing
-        APP_KEY: base64:ueiLZl0VWJYaxqHj8McYrWoyfdkLByCZe7Y4dQwU+wg=
-        APP_DEBUG: true
-        APP_LOG_LEVEL: debug
-        DB_CONNECTION: pgsql
-        DB_HOST: localhost
-        DB_PORT: 5432
-        DB_DATABASE: postgres
-        DB_USERNAME: ubuntu
-        DB_PASSWORD: postgres
-        DATABASE_URL: postgres://ubuntu@localhost:5432/postgres
-        REDIS_URL: redis://redis:p5890db5d499beb8944b09fa0@localhost:13009
-        BROADCAST_DRIVER: log
-        CACHE_DRIVER: file
-        SESSION_DRIVER: file
-        QUEUE_DRIVER: sync
-        REDIS_HOST: 127.0.0.1
-        REDIS_PASSWORD: null
-        ROLLBAR_ACCESS_TOKEN: sdfasd
-        ROLLBAR_LEVEL: debug
-        STRIPE_SECRET: jashg
       - image: postgres:9.6.2
+        environment:
+          POSTGRES_USER: ubuntu
+          POSTGRES_DB: postgres
+          POSTGRES_PASSWORD: postgres
     steps:
       - checkout
+      - run:
+          name: Install System Dependencies
+          command: |
+            sudo apt-get update && sudo apt-get -f install && sudo apt-get install wget
+      - run: 
+          name: Check Rejected Commits
+          command: ./deploy
+      - run: 
+          name: Install Composer
+          command: |
+            sudo composer self-update
+            composer install --prefer-source --no-interaction --dev
+      - run:
+          name: Unit Tests
+          command: |
+            ./vendor/phpunit/phpunit/phpunit
       - run: bash .circleci/setup-heroku.sh
       - add_ssh_keys:
           fingerprints:

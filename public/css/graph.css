@@ -1,0 +1,15 @@
+.morris-hover.morris-default-style {
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16);
+    border-radius: 2px;
+    display: inline-block;
+    border: none;font-family: lato;
+}
+.morris-hover.morris-default-style .morris-hover-point {
+    font-size: 24px;font-weight: 600;text-align: center;line-height: 24px;color: #0D47A1;
+    font-family: lato;
+}
+.morris-hover.morris-default-style .morris-hover-row-label {
+    color: #9e9e9e;    display: block;    font-size: 13px;    line-height: 13px;    margin-top: 2px;    text-align: center; font-family: lato;   width: 100%; font-weight: 400; 
+}

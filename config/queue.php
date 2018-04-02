@@ -7,7 +7,7 @@ return [
     | Default Queue Driver
     |--------------------------------------------------------------------------
     |
-    | Laravel's queue API supports an assortment of back-ends via a single
+    | The Laravel queue API supports a variety of back-ends via an unified
     | API, giving you convenient access to each back-end using the same
     | syntax for each one. Here you may set the default queue driver.
     |
@@ -38,7 +38,7 @@ return [
             'driver' => 'database',
             'table' => 'jobs',
             'queue' => 'default',
-            'retry_after' => 90,
+            'retry_after' => 900,
         ],
 
         'beanstalkd' => [
@@ -50,11 +50,11 @@ return [
 
         'sqs' => [
             'driver' => 'sqs',
-            'key' => env('SQS_KEY', 'your-public-key'),
-            'secret' => env('SQS_SECRET', 'your-secret-key'),
-            'prefix' => env('SQS_PREFIX', 'https://sqs.us-east-1.amazonaws.com/your-account-id'),
-            'queue' => env('SQS_QUEUE', 'your-queue-name'),
-            'region' => env('SQS_REGION', 'us-east-1'),
+            'key' => 'your-public-key',
+            'secret' => 'your-secret-key',
+            'prefix' => 'https://sqs.us-east-1.amazonaws.com/your-account-id',
+            'queue' => 'your-queue-name',
+            'region' => 'us-east-1',
         ],
 
         'redis' => [

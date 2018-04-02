@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit backupGlobals="false"
          backupStaticAttributes="false"
-         bootstrap="vendor/autoload.php"
+         bootstrap="bootstrap/autoload.php"
          colors="true"
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
@@ -9,12 +9,18 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Feature">
+        <testsuite name="Feature Tests">
             <directory suffix="Test.php">./tests/Feature</directory>
         </testsuite>
-
-        <testsuite name="Unit">
-            <directory suffix="Test.php">./tests/Unit</directory>
+        <testsuite name="Core Tests">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+        <testsuite name="Admin Tests">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+        
+        <testsuite name="Unit Tests">
+            <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
     <filter>
@@ -23,9 +29,19 @@
         </whitelist>
     </filter>
     <php>
-        <env name="APP_ENV" value="testing"/>
-        <env name="CACHE_DRIVER" value="array"/>
-        <env name="SESSION_DRIVER" value="array"/>
+        <env name="APP_ENV" value="local"/>
+        <env name="CACHE_DRIVER" value="file"/>
+        <env name="SESSION_DRIVER" value="file"/>
+        <env name="DB_CONNECTION" value="pgsql"/>
+        <env name="DB_HOST" value="127.0.0.1"/>
+        <env name="DB_PORT" value="5432"/>
+        <env name="DB_DATABASE" value="postgres"/>
+        <env name="DB_USERNAME" value="postgres"/>
+        <env name="DB_PASSWORD" value="semt"/>
         <env name="QUEUE_DRIVER" value="sync"/>
+        <env name="ROLLBAR_ACCESS_TOKEN" value="000000"/>
+        <env name="APP_LOG_LEVEL" value="debug"/>
+        <env name="QUEUE_DRIVER" value="sync"/>
+        
     </php>
 </phpunit>

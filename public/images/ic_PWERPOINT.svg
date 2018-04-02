@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="42px" viewBox="0 0 34 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_PWERPOINT</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-716.000000, -215.000000)">
+            <g id="ic_PWERPOINT" transform="translate(717.000000, 216.000000)">
+                <g id="Group-15-Copy-2" stroke="#0D47A1" stroke-width="2">
+                    <rect id="Rectangle-14" x="0" y="0" width="32" height="39.6521739" rx="2"></rect>
+                </g>
+                <g id="Group-21" transform="translate(11.000000, 12.000000)" fill="#0D47A1">
+                    <g id="Page-1">
+                        <path d="M4.4295218,10.9218909 L4.4295218,8.0128 C5.78458947,8.0128 6.88750677,6.97716364 6.88750677,5.70395152 C6.88750677,4.43073939 5.78458947,3.39510303 4.4295218,3.39510303 L4.4295218,0.486012121 C7.37689023,0.486012121 9.77472481,2.82686061 9.77472481,5.70395152 C9.77472481,8.58104242 7.37689023,10.9218909 4.4295218,10.9218909" id="Fill-1"></path>
+                        <polygon id="Fill-4" points="0 3.39757576 0 0.488484848 4.69702256 0.485090909 4.70616541 3.39418182"></polygon>
+                        <polygon id="Fill-6" points="0.0298345865 10.9220364 4.42947368 10.9220364 4.42947368 8.01294545 0.0298345865 8.01294545"></polygon>
+                        <polygon id="Fill-8" points="0 16 2.88721805 16 2.88721805 3.34967273 0 3.34967273"></polygon>
+                    </g>
+                    <rect id="Rectangle-15" x="3" y="8.19032241" width="2" height="2.5285669"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="145px" height="48px" viewBox="0 0 145 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>email button@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="137" height="40" rx="2"></rect>
+        <filter x="-5.1%" y="-12.5%" width="110.2%" height="135.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="•-Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Email_AlertPost" transform="translate(-568.000000, -534.000000)">
+            <g id="email-button" transform="translate(572.000000, 536.000000)">
+                <g id="Rectangle-2-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#0D47A1" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <text id="View-full-post" font-family="Arial-BoldMT, Arial" font-size="15" font-weight="bold" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="20" y="24">View full post</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

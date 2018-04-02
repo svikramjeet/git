@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="152px" height="152px" viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>avatar_Large</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="76" cy="76" r="76"></circle>
+    </defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-452.000000, -42.000000)">
+            <g id="avatar_Large" transform="translate(452.000000, 42.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#E0E0E0" xlink:href="#path-1"></use>
+                <path d="M99.8489583,60.1815594 C99.8489583,47.0008958 89.1765495,36.3251547 76,36.3251547 C62.8234505,36.3251547 52.1510417,47.0008958 52.1510417,60.1815594 C52.1510417,73.362223 62.8234505,84.0379641 76,84.0379641 C89.1765495,84.0379641 99.8489583,73.362223 99.8489583,60.1815594 Z M27.1145833,119.822571 L27.1145833,161.203125 L124.885417,161.203125 L124.885417,119.822571 C124.885417,103.958062 91.9191797,95.9661665 76,95.9661665 C60.0808203,95.9661665 27.1145833,103.958062 27.1145833,119.822571 Z" id="Shape" fill="#BDBDBD" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

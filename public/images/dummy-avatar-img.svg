@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>avatar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="•-Community" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CS_updatedCommunity_1.1" transform="translate(-516.000000, -503.000000)">
+            <g id="Group-9-Copy-4" transform="translate(492.000000, 479.000000)">
+                <g id="Group-9">
+                    <g id="Group-11">
+                        <g id="avatar" transform="translate(24.000000, 24.000000)">
+                            <rect id="Mask" fill="#E0E0E0" x="0" y="0" width="40" height="40" rx="2"></rect>
+                            <path d="M26.25,16.25 C26.25,12.796875 23.453125,10 20,10 C16.546875,10 13.75,12.796875 13.75,16.25 C13.75,19.703125 16.546875,22.5 20,22.5 C23.453125,22.5 26.25,19.703125 26.25,16.25 Z M7.5,32.7319174 L7.5,39.9824317 L32.5,39.9824317 L32.5,32.7319174 C32.5,28.4128531 24.0705339,26.2370839 20,26.2370839 C15.9294661,26.2370839 7.5,28.4128531 7.5,32.7319174 Z" id="Shape" fill="#424242"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

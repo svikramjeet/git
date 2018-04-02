@@ -1,0 +1,138 @@
+.car_edit_upload .modal-header h3 {
+  font-size: 20px;
+  color: #424242;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin: 0;
+}
+.car_edit_upload .modal-header p {
+  font-size: 12px;
+  color: #9E9E9E;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin: 16px 0 0;
+}
+
+.car_edit_upload .cropit-preview {
+  background-color: #f8f8f8;
+    background-size: cover;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 128px;
+    margin: auto auto auto -212px;
+    transform: scale(0.68);
+    width: 1280px;
+}
+.car_edit_upload .change-photo input {
+  display: none;
+}
+.car_edit_upload .change-photo {
+  color: #2b90d9;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    font-weight: 500;
+}
+.car_edit_upload .modal-header {
+  padding: 16px 32px;
+  border: none;
+}
+.car_edit_upload .cropit-preview-background-container {
+  opacity: 0.2;
+}
+.car_edit_upload .cropit-preview-image-container {
+  cursor: move;
+}
+.car_edit_upload .range-slider {
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+.car_edit_upload .range-slider:before {
+  content: "\f1c5";
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  font-family: FontAwesome;
+}
+.car_edit_upload .range-slider:after {
+  content: "\f1c5";
+position: absolute;
+right: -11px;
+font-family: FontAwesome;
+font-size: 26px;
+}
+.car_edit_upload span.rotate-cw {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 16px;
+  margin-top: 9px;
+  margin-left: 19px;
+}
+.car_edit_upload span.rotate-cw:after {
+  content: "\f01e";
+  display: inline-block;
+    font-family: FontAwesome;
+    position: absolute;
+    cursor: pointer;
+}
+.car_edit_upload .crop-btns button {
+  float: right;
+margin-left: 8px;
+margin-top: 0;
+}
+.car_edit_upload .crop-btns button#cancelpopup {
+  color: #0d47a1;
+}
+.clickbuton {
+  cursor: pointer;
+}
+
+
+.cropit-footer {
+  margin-top: 50px;
+}
+
+
+
+
+
+#myModalCrop input[type=range] {    min-height: 30px;    float: left;  -webkit-appearance: none;/* Hides the slider so that custom slider can be made */  /* Specific width is required for Firefox. */  background: transparent;/* Otherwise white in Chrome */  margin:0px 7px 0;  }*::-ms-backdrop, 
+#myModalCrop input[type=range] { min-height:80px; margin: -18px 0 0 5px;  } /* IE11 */
+@media screen\0 {   
+  #myModalCrop input[type=range] { min-height:80px; margin: -20px 0 0 5px;  } /* IE11 */
+}
+#myModalCrop input[type=range]::-webkit-slider-thumb {  -webkit-appearance: none;}
+#myModalCrop input[type=range]:focus {  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */}
+#myModalCrop input[type=range]::-ms-track {  width: 100%;  cursor: pointer;  /* Hides the slider so custom styles can be added */  background: #1D71B8 ;  border-color: transparent;  color: transparent;}/* Special styling for WebKit/Blink */
+#myModalCrop input[type=range]::-webkit-slider-thumb {  -webkit-appearance: none;    height: 20px;  width: 20px;  border-radius:100%;  background: #1D71B8 ;  cursor: pointer;  margin:-8px 0px 0 0; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.18);  border:0;}/* All the same stuff for Firefox */
+#myModalCrop input[type=range]::-moz-range-thumb {   background: #1D71B8 ;  height: 20px;  width: 20px;  border-radius:100%;  cursor: pointer;  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.18);  border: 0;  margin: 0 7px;}/* All the same stuff for IE */
+#myModalCrop input[type=range]::-ms-thumb {      height: 20px;  width: 20px;  border-radius:100%;  background: #1D71B8 ;  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.18);  cursor: pointer;  border: 0;   margin:0px 0 0;}
+#myModalCrop input[type=range]::-webkit-slider-runnable-track {  width: 100%;  height:5px;  cursor: pointer;  background: #eee;  margin:9px 0px 0;}
+#myModalCrop input[type=range]:focus::-webkit-slider-runnable-track {  width: 100%;  height:5px;  cursor: pointer;  background: #eee;}
+#myModalCrop input[type=range]::-moz-range-track {  width: 100%;  height:5px;  cursor: pointer;  background: #eee;}
+#myModalCrop input[type=range]::-ms-track {  width: 100%;  height:5px;  cursor: pointer;  background: #eee;  margin:6px 0px 0; }
+
+@media only screen and (max-width: 991px) {
+  .car_edit_upload .cropit-preview {
+    width: 569px !important;
+  }
+  
+}
+@media only screen and (max-width: 900px) {
+  .share_preview_modal_trigger.clickbuton{
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .car_edit_upload .cropit-preview {
+    width: 271px !important;
+  }
+  .car_edit_upload  .modal-dialog {
+    width: 302px;
+  }
+}

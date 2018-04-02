@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_chat</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Prototype" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CS_Prototype_1" transform="translate(-916.000000, -24.000000)" fill="#FFFFFF">
+            <g id="ic_chat" transform="translate(912.000000, 20.000000)">
+                <path d="M18.4,4 L5.6,4 C4.72,4 4.008,4.72 4.008,5.6 L4,20 L7.2,16.8 L18.4,16.8 C19.28,16.8 20,16.08 20,15.2 L20,5.6 C20,4.72 19.28,4 18.4,4 L18.4,4 Z M7.2,9.6 L16.8,9.6 L16.8,11.2 L7.2,11.2 L7.2,9.6 L7.2,9.6 Z M13.6,13.6 L7.2,13.6 L7.2,12 L13.6,12 L13.6,13.6 L13.6,13.6 Z M16.8,8.8 L7.2,8.8 L7.2,7.2 L16.8,7.2 L16.8,8.8 L16.8,8.8 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

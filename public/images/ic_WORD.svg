@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="42px" viewBox="0 0 34 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_WORD</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-716.000000, -127.000000)">
+            <g id="ic_WORD" transform="translate(717.000000, 128.000000)">
+                <g id="Group-15-Copy" stroke="#0D47A1" stroke-width="2">
+                    <rect id="Rectangle-14" x="0" y="0" width="32" height="39.6521739" rx="2"></rect>
+                </g>
+                <g id="Page-1" transform="translate(6.000000, 12.000000)" fill="#0D47A1">
+                    <polygon id="Fill-1" points="0 0.000218181818 3.67586207 15.9274909 6.64551724 15.9274909 3.72413793 0.000218181818"></polygon>
+                    <polygon id="Fill-2" points="8.352 0.000218181818 4.53682759 15.9274909 7.48993103 15.9274909 11.1892414 0.000218181818"></polygon>
+                    <polygon id="Fill-3" points="8.35262069 0.000218181818 12.0284828 15.9274909 14.9974483 15.9274909 12.0767586 0.000218181818"></polygon>
+                    <polygon id="Fill-4" points="16.1553031 0.000218181818 12.3408203 15.9274909 15.841931 15.9274909 19.5412414 0.000218181818"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

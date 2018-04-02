@@ -15,10 +15,6 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
-        \App\Http\Middleware\TrimStrings::class,
-        \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
-        \App\Http\Middleware\TrustProxies::class,
     ];
 
     /**
@@ -28,12 +24,12 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
+
+            \App\Http\Middleware\FrameHeadersMiddleware::class,
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
-            // \Illuminate\Session\Middleware\AuthenticateSession::class,
-            \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \App\Http\Middleware\VerifyCsrfToken::class,
+            \Illuminate\View\Middleware\ShareErrorsFromSession::class,            
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
@@ -57,5 +53,12 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'user_type_template' => \App\Http\Middleware\CheckUserTypeTemplate::class,
+        'checkstatus' => \App\Http\Middleware\CheckStatus::class,
+        'verify_csrf_token'=>\App\Http\Middleware\VerifyCsrfToken::class,
+        'MailLinkRedirection' => \App\Http\Middleware\MailLinkRedirection::class,
+        'security_http_header' => \App\Http\Middleware\FrameHeadersMiddleware::class,
+        'admin_two_way_auth_redirect' => \App\Http\Middleware\AdminTwoWayAuthRedirect::class,
+        'role_wise_filter' => \App\Http\Middleware\RoleWiseFilter::class,
     ];
 }

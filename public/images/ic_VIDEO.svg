@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="42px" viewBox="0 0 34 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_VIDEO</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-767.000000, -217.000000)">
+            <g id="ic_VIDEO" transform="translate(768.000000, 218.000000)">
+                <rect id="Rectangle-14" stroke="#0D47A1" stroke-width="2" x="0" y="0" width="32" height="39.6521739" rx="2"></rect>
+                <g id="ic_videocam" transform="translate(4.000000, 8.000000)" fill="#0D47A1">
+                    <path d="M17,10.5 L17,7 C17,6.45 16.55,6 16,6 L4,6 C3.45,6 3,6.45 3,7 L3,17 C3,17.55 3.45,18 4,18 L16,18 C16.55,18 17,17.55 17,17 L17,13.5 L21,17.5 L21,6.5 L17,10.5 L17,10.5 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

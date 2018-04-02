@@ -1,4 +1,4 @@
-git remote add heroku https://git.heroku.com/uat-elsie.git
+git remote add heroku https://git.heroku.com/uat-clientspace.git
 
 wget https://cli-assets.heroku.com/branches/stable/heroku-linux-amd64.tar.gz
 sudo sumkdir -p /usr/local/lib /usr/local/bin

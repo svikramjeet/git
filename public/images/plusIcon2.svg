@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>plusIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="•-Analytics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CS_Analytics_1" transform="translate(-595.000000, -728.000000)" fill="#43A047">
+            <g id="Group-20-Copy-3" transform="translate(332.000000, 669.000000)">
+                <g id="Group-13">
+                    <g id="Group-16" transform="translate(236.000000, 53.000000)">
+                        <g id="plusIcon" transform="translate(27.000000, 6.000000)">
+                            <g id="Group-27">
+                                <rect id="Rectangle" x="9.33333333" y="0" width="3" height="20" rx="1.5"></rect>
+                                <rect id="Rectangle-Copy" transform="translate(10.833333, 10.000000) rotate(-270.000000) translate(-10.833333, -10.000000) " x="9.33333333" y="1.56319402e-13" width="3" height="20" rx="1.5"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
