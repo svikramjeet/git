@@ -1,85 +1,53 @@
-## Client Share
+<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-The Client Share app is used to improve business results by strengthening and deepening account relationships between buyers and sellers across the globe.
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
 
-Client Share is a secure, collaborative, digital community for Sales and Account Management, giving you and your client one place to share and access content, collaborate, and rate your business relationship anytime, anywhere. And our relationship analytics enable decisions to be made based on account insight not hindsight.
+## About Laravel
 
-## About Project
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
 
-- Language: PHP (7.0)
-- Framework: Laravel ( 5.3 )
-- Database: PostgreSql
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-## How to install project on local
-  
-   Open CLI and run following commands to set up at local:
-   - **Clone the project**
-        >
-            git clone https://github.com/uCreateit/clientshare-web.git
+Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
 
-  - **Set permissions**
-       >
-            sudo chmod -R 777 { project-storage-path }
-            sudo chmod -R 777 { project-bootstrap-path }
+## Learning Laravel
 
-  - **Go to project directory**
-       >
-            cd clientshare-web
+Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
 
-  - **Copy .env.example to .env**
-       >
-            cp .env.example .env
+If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
-- **Install the dependencies**    
->
-           composer install
-  
+## Laravel Sponsors
 
+We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
 
-# Database installation
-- **How to install postgresql ( Ubuntu )**
-    >
-        sudo apt-get install postgresql postgresql-contrib
-- **Which UI being used to connect to DB**
-    >
-        pgadmin
-- **Create  database**
-    >
-         1. login to pgsql
-          sudo psql -h localhost -U postgres    
-          2. create database clientshare;
+- **[Vehikl](http://vehikl.com)**
+- **[Tighten Co.](https://tighten.co)**
+- **[British Software Development](https://www.britishsoftware.co)**
+- **[Styde](https://styde.net)**
+- [Fragrantica](https://www.fragrantica.com)
+- [SOFTonSOFA](https://softonsofa.com/)
+- [User10](https://user10.com)
+- [Soumettre.fr](https://soumettre.fr/)
 
-# Post Installation steps
- - **Run database migrations**
-    >
-        php artisan migrate
+## Contributing
 
-- **Start server**
-    >
-        php artisan serve
-        The API will be running on localhost:8000 now
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
 
-# External Services/API Reference
-- **Email Service**
-    >
-	 - PostMark
-	 - Create Account on Postmark (https://postmarkapp.com) and verify the sender signatures.
-	 - Create email templetes on Postmark
-	 - Set Postmark token and template IDs in environment/config variables
-- **Images Storage**
-    >
-        - AWS S3
-         1. Your S3 credentials can be found on the Security Credentials section of AWS Account
-         2. To create a bucket access the S3 section of the AWS Management Console
-         3. Set AWS access key, secret key, bucket name etc. as environment variables.
-        Reference: https://aws.amazon.com/s3
+## Security Vulnerabilities
 
-- **Embed.ly:**
-   >
-        It is used for getting the url metadata
-        Reference: http://embed.ly
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
-- **Linkedin API:**
-   >
-        It is used to get the information from linkedin
-        Reference: https://developer.linkedin.com
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

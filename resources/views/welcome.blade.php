@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
             html, body {
                 background-color: #fff;
                 color: #636b6f;
-                font-family: 'Raleway';
+                font-family: 'Raleway', sans-serif;
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
@@ -56,30 +56,60 @@
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
-                /*text-transform: uppercase;*/
+                text-transform: uppercase;
             }
 
             .m-b-md {
                 margin-bottom: 30px;
             }
         </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="hello/main.js"></script>
+<script>
+    {{--  jQuery(document).ready(function () {
+
+function Car(speed) {
+	//alert("Class CAR Instantiated");
+	this.speed = speed;
+}
+
+var car1 = new Car(40);
+var car2 = new Car(60);
+alert("Car1 Speed: " + car1.speed);
+alert("Car2 Speed: " + car2.speed);
+
+
+    });  --}}
+</script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
-                    <a href="{{ url('/login') }}">Login</a>
-                    <a href="{{ url('/register') }}">Register</a>
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('register') }}">Register</a>
+                    @endauth
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Hello World !!!
+                    Laravel
+                    
+                    @env('production')
+                      <script src="prod.js"></script>
+                    @endenv
                 </div>
 
                 <div class="links">
-                    <a href="https://clientshare.com/"><small>by </small>CLIENT SHARE</a>
+                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
         </div>
