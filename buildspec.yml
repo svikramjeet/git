@@ -11,21 +11,21 @@ phases:
          LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
          apt-get update
          # Install PHP 7
-         sudo apt-get install -y php7.1\
-                  php7.1-ldap \
-                  php7.1-xml \
-                  php7.1-xmlrpc \
-                  php7.1-zip \
-                  php7.1-mysql \
-                  php7.1-mbstring \
-                  php7.1-mcrypt \
-                  php7.1-gd \
-                  php7.1-readline \
-                  php7.1-opcache \
-                  php7.1-xdebug \
-                  php7.1-dom \
+         sudo apt-get install -y php7\
+                  php7-ldap \
+                  php7-xml \
+                  php7-xmlrpc \
+                  php7-zip \
+                  php7-mysql \
+                  php7-mbstring \
+                  php7-mcrypt \
+                  php7-gd \
+                  php7-readline \
+                  php7-opcache \
+                  php7-xdebug \
+                  php7-dom \
                   php-xdebug \
-                  php7.1-curl \
+                  php7-curl \
                   unzip
          #Enable xdebug - phpunit uses this for code coverage
          phpenmod xdebug
@@ -47,6 +47,11 @@ phases:
      - echo Installing composer deps
      - composer install --no-progress --no-suggest --no-scripts
 
+ pre_build:
+   commands:
+     - echo Review Tool
+     - bash ./deploy
+     
  post_build:
    commands:
      - echo Build completed on `date`
