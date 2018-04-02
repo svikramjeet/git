@@ -1,3 +1,3 @@
 #!/bin/sh
-sudo service apache2 restart
-composer install
+#sudo service apache2 restart
+#composer install
