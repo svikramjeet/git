@@ -60,7 +60,7 @@ phases:
      # - /usr/bin/mysql  -u root -e "GRANT ALL ON *.* TO 'test'@'localhost' IDENTIFIED BY '' WITH GRANT OPTION"
      # - mysqladmin -u test create test
      #-  ./vendor/phpunit/phpunit/phpunit
+
 artifacts:
-      files:
-    - '**/*'
-        
+  files:
+    - '**/*'      
